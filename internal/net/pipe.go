@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
+	xio "github.com/AbnerEarl/gost-x/internal/io"
 	"github.com/go-gost/core/common/bufpool"
-	xio "github.com/go-gost/x/internal/io"
 )
 
 const (

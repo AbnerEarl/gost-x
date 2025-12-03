@@ -15,9 +15,9 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/AbnerEarl/gost-x/config"
+	tls_util "github.com/AbnerEarl/gost-x/internal/util/tls"
 	"github.com/go-gost/core/logger"
-	"github.com/go-gost/x/config"
-	tls_util "github.com/go-gost/x/internal/util/tls"
 )
 
 var (

@@ -4,9 +4,9 @@ import (
 	"errors"
 	"time"
 
+	mdutil "github.com/AbnerEarl/gost-x/metadata/util"
 	mdata "github.com/go-gost/core/metadata"
 	"github.com/go-gost/relay"
-	mdutil "github.com/go-gost/x/metadata/util"
 	"github.com/google/uuid"
 )
 

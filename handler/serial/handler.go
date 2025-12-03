@@ -7,17 +7,17 @@ import (
 	"net"
 	"time"
 
+	xctx "github.com/AbnerEarl/gost-x/ctx"
+	xnet "github.com/AbnerEarl/gost-x/internal/net"
+	serial "github.com/AbnerEarl/gost-x/internal/util/serial"
+	xrecorder "github.com/AbnerEarl/gost-x/recorder"
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/go-gost/core/chain"
 	"github.com/go-gost/core/handler"
 	"github.com/go-gost/core/hop"
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
 	"github.com/go-gost/core/recorder"
-	xctx "github.com/go-gost/x/ctx"
-	xnet "github.com/go-gost/x/internal/net"
-	serial "github.com/go-gost/x/internal/util/serial"
-	xrecorder "github.com/go-gost/x/recorder"
-	"github.com/go-gost/x/registry"
 )
 
 func init() {
@@ -69,9 +69,9 @@ func (h *serialHandler) Handle(ctx context.Context, conn net.Conn, opts ...handl
 
 	log = log.WithFields(map[string]any{
 		"network": "serial",
-		"remote": conn.RemoteAddr().String(),
-		"local":  conn.LocalAddr().String(),
-		"sid":    xctx.SidFromContext(ctx).String(),
+		"remote":  conn.RemoteAddr().String(),
+		"local":   conn.LocalAddr().String(),
+		"sid":     xctx.SidFromContext(ctx).String(),
 	})
 
 	conn = &recorderConn{

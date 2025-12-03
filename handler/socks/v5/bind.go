@@ -5,15 +5,15 @@ import (
 	"net"
 	"time"
 
+	xctx "github.com/AbnerEarl/gost-x/ctx"
+	xnet "github.com/AbnerEarl/gost-x/internal/net"
+	traffic_wrapper "github.com/AbnerEarl/gost-x/limiter/traffic/wrapper"
+	stats_wrapper "github.com/AbnerEarl/gost-x/observer/stats/wrapper"
+	xrecorder "github.com/AbnerEarl/gost-x/recorder"
 	"github.com/go-gost/core/limiter"
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/core/observer/stats"
 	"github.com/go-gost/gosocks5"
-	xctx "github.com/go-gost/x/ctx"
-	xnet "github.com/go-gost/x/internal/net"
-	traffic_wrapper "github.com/go-gost/x/limiter/traffic/wrapper"
-	stats_wrapper "github.com/go-gost/x/observer/stats/wrapper"
-	xrecorder "github.com/go-gost/x/recorder"
 )
 
 func (h *socks5Handler) handleBind(ctx context.Context, conn net.Conn, network, address string, ro *xrecorder.HandlerRecorderObject, log logger.Logger) error {

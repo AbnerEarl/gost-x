@@ -6,11 +6,11 @@ import (
 	"os"
 	"strings"
 
+	"github.com/AbnerEarl/gost-x/config"
+	"github.com/AbnerEarl/gost-x/config/cmd"
+	xmd "github.com/AbnerEarl/gost-x/metadata"
+	mdutil "github.com/AbnerEarl/gost-x/metadata/util"
 	"github.com/go-gost/core/logger"
-	"github.com/go-gost/x/config"
-	"github.com/go-gost/x/config/cmd"
-	xmd "github.com/go-gost/x/metadata"
-	mdutil "github.com/go-gost/x/metadata/util"
 )
 
 var (

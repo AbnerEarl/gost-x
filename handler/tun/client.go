@@ -9,10 +9,10 @@ import (
 	"net"
 	"time"
 
+	xip "github.com/AbnerEarl/gost-x/internal/net/ip"
+	tun_util "github.com/AbnerEarl/gost-x/internal/util/tun"
 	"github.com/go-gost/core/common/bufpool"
 	"github.com/go-gost/core/logger"
-	xip "github.com/go-gost/x/internal/net/ip"
-	tun_util "github.com/go-gost/x/internal/util/tun"
 	"github.com/songgao/water/waterutil"
 	"golang.org/x/net/ipv4"
 	"golang.org/x/net/ipv6"

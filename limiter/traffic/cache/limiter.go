@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
+	"github.com/AbnerEarl/gost-x/internal/util/cache"
 	"github.com/go-gost/core/limiter"
 	"github.com/go-gost/core/limiter/traffic"
-	"github.com/go-gost/x/internal/util/cache"
 )
 
 const (

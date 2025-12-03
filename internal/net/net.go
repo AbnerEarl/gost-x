@@ -9,7 +9,7 @@ import (
 	"strings"
 	"syscall"
 
-	xio "github.com/go-gost/x/internal/io"
+	xio "github.com/AbnerEarl/gost-x/internal/io"
 	"github.com/vishvananda/netns"
 )
 

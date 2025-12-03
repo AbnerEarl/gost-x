@@ -3,15 +3,15 @@ package udp
 import (
 	"net"
 
+	admission "github.com/AbnerEarl/gost-x/admission/wrapper"
+	limiter_wrapper "github.com/AbnerEarl/gost-x/limiter/traffic/wrapper"
+	metrics "github.com/AbnerEarl/gost-x/metrics/wrapper"
+	stats "github.com/AbnerEarl/gost-x/observer/stats/wrapper"
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/go-gost/core/limiter"
 	"github.com/go-gost/core/listener"
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
-	admission "github.com/go-gost/x/admission/wrapper"
-	limiter_wrapper "github.com/go-gost/x/limiter/traffic/wrapper"
-	metrics "github.com/go-gost/x/metrics/wrapper"
-	stats "github.com/go-gost/x/observer/stats/wrapper"
-	"github.com/go-gost/x/registry"
 )
 
 func init() {

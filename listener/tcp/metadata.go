@@ -1,8 +1,8 @@
 package tcp
 
 import (
+	mdutil "github.com/AbnerEarl/gost-x/metadata/util"
 	md "github.com/go-gost/core/metadata"
-	mdutil "github.com/go-gost/x/metadata/util"
 )
 
 type metadata struct {

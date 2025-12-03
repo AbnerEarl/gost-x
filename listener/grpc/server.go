@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
+	xctx "github.com/AbnerEarl/gost-x/ctx"
+	pb "github.com/AbnerEarl/gost-x/internal/util/grpc/proto"
 	"github.com/go-gost/core/logger"
-	xctx "github.com/go-gost/x/ctx"
-	pb "github.com/go-gost/x/internal/util/grpc/proto"
 	mdata "google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/peer"
 )

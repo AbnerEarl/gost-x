@@ -5,11 +5,11 @@ import (
 	"errors"
 	"net"
 
+	ctxvalue "github.com/AbnerEarl/gost-x/ctx"
+	ssh_util "github.com/AbnerEarl/gost-x/internal/util/ssh"
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/go-gost/core/connector"
 	md "github.com/go-gost/core/metadata"
-	ctxvalue "github.com/go-gost/x/ctx"
-	ssh_util "github.com/go-gost/x/internal/util/ssh"
-	"github.com/go-gost/x/registry"
 )
 
 func init() {

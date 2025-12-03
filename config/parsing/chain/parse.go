@@ -1,15 +1,15 @@
 package chain
 
 import (
+	xchain "github.com/AbnerEarl/gost-x/chain"
+	"github.com/AbnerEarl/gost-x/config"
+	hop_parser "github.com/AbnerEarl/gost-x/config/parsing/hop"
+	mdx "github.com/AbnerEarl/gost-x/metadata"
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/go-gost/core/chain"
 	"github.com/go-gost/core/hop"
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/core/metadata"
-	xchain "github.com/go-gost/x/chain"
-	"github.com/go-gost/x/config"
-	hop_parser "github.com/go-gost/x/config/parsing/hop"
-	mdx "github.com/go-gost/x/metadata"
-	"github.com/go-gost/x/registry"
 )
 
 func ParseChain(cfg *config.ChainConfig, log logger.Logger) (chain.Chainer, error) {

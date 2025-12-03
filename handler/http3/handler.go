@@ -9,15 +9,15 @@ import (
 	"strings"
 	"time"
 
+	xctx "github.com/AbnerEarl/gost-x/ctx"
+	ictx "github.com/AbnerEarl/gost-x/internal/ctx"
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/go-gost/core/bypass"
 	"github.com/go-gost/core/chain"
 	"github.com/go-gost/core/handler"
 	"github.com/go-gost/core/hop"
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
-	xctx "github.com/go-gost/x/ctx"
-	ictx "github.com/go-gost/x/internal/ctx"
-	"github.com/go-gost/x/registry"
 )
 
 func init() {

@@ -9,9 +9,9 @@ import (
 	"syscall"
 	"time"
 
+	ctxvalue "github.com/AbnerEarl/gost-x/ctx"
+	xnet "github.com/AbnerEarl/gost-x/internal/net"
 	"github.com/go-gost/core/logger"
-	ctxvalue "github.com/go-gost/x/ctx"
-	xnet "github.com/go-gost/x/internal/net"
 	"github.com/vishvananda/netns"
 )
 

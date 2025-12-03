@@ -7,10 +7,10 @@ import (
 	"net"
 	"net/http"
 
+	ctxvalue "github.com/AbnerEarl/gost-x/ctx"
+	"github.com/AbnerEarl/gost-x/internal/plugin"
 	"github.com/go-gost/core/hosts"
 	"github.com/go-gost/core/logger"
-	ctxvalue "github.com/go-gost/x/ctx"
-	"github.com/go-gost/x/internal/plugin"
 )
 
 type httpPluginRequest struct {

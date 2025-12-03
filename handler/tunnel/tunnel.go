@@ -6,17 +6,17 @@ import (
 	"sync"
 	"time"
 
+	"github.com/AbnerEarl/gost-x/internal/util/mux"
 	"github.com/go-gost/core/limiter"
 	"github.com/go-gost/core/limiter/traffic"
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/core/sd"
 	"github.com/go-gost/relay"
-	"github.com/go-gost/x/internal/util/mux"
 
+	traffic_wrapper "github.com/AbnerEarl/gost-x/limiter/traffic/wrapper"
+	stats_wrapper "github.com/AbnerEarl/gost-x/observer/stats/wrapper"
+	"github.com/AbnerEarl/gost-x/selector"
 	"github.com/go-gost/core/observer/stats"
-	traffic_wrapper "github.com/go-gost/x/limiter/traffic/wrapper"
-	stats_wrapper "github.com/go-gost/x/observer/stats/wrapper"
-	"github.com/go-gost/x/selector"
 	"github.com/google/uuid"
 )
 

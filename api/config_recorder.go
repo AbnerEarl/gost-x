@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/AbnerEarl/gost-x/config"
+	parser "github.com/AbnerEarl/gost-x/config/parsing/recorder"
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/gin-gonic/gin"
-	"github.com/go-gost/x/config"
-	parser "github.com/go-gost/x/config/parsing/recorder"
-	"github.com/go-gost/x/registry"
 )
 
 // swagger:parameters getRecorderListRequest
@@ -23,7 +23,7 @@ type getRecorderListResponse struct {
 }
 
 type recorderList struct {
-	Count int                       `json:"count"`
+	Count int                      `json:"count"`
 	List  []*config.RecorderConfig `json:"list"`
 }
 

@@ -7,15 +7,15 @@ import (
 	"net"
 	"time"
 
+	xnet "github.com/AbnerEarl/gost-x/internal/net"
+	"github.com/AbnerEarl/gost-x/internal/net/dialer"
+	"github.com/AbnerEarl/gost-x/internal/net/udp"
+	xmetrics "github.com/AbnerEarl/gost-x/metrics"
 	"github.com/go-gost/core/chain"
 	"github.com/go-gost/core/connector"
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/core/metrics"
 	"github.com/go-gost/core/selector"
-	xnet "github.com/go-gost/x/internal/net"
-	"github.com/go-gost/x/internal/net/dialer"
-	"github.com/go-gost/x/internal/net/udp"
-	xmetrics "github.com/go-gost/x/metrics"
 )
 
 var (

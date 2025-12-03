@@ -9,11 +9,11 @@ import (
 	"net/http/httputil"
 	"time"
 
+	ictx "github.com/AbnerEarl/gost-x/internal/ctx"
+	"github.com/AbnerEarl/gost-x/internal/net/udp"
+	"github.com/AbnerEarl/gost-x/internal/util/socks"
+	xrecorder "github.com/AbnerEarl/gost-x/recorder"
 	"github.com/go-gost/core/logger"
-	ictx "github.com/go-gost/x/internal/ctx"
-	"github.com/go-gost/x/internal/net/udp"
-	"github.com/go-gost/x/internal/util/socks"
-	xrecorder "github.com/go-gost/x/recorder"
 )
 
 func (h *httpHandler) handleUDP(ctx context.Context, conn net.Conn, ro *xrecorder.HandlerRecorderObject, log logger.Logger) error {

@@ -8,12 +8,12 @@ import (
 	"net"
 	"syscall"
 
+	"github.com/AbnerEarl/gost-x/ctx"
+	xio "github.com/AbnerEarl/gost-x/internal/io"
+	xnet "github.com/AbnerEarl/gost-x/internal/net"
+	"github.com/AbnerEarl/gost-x/internal/net/udp"
 	"github.com/go-gost/core/limiter"
 	"github.com/go-gost/core/limiter/traffic"
-	"github.com/go-gost/x/ctx"
-	xio "github.com/go-gost/x/internal/io"
-	xnet "github.com/go-gost/x/internal/net"
-	"github.com/go-gost/x/internal/net/udp"
 )
 
 var (

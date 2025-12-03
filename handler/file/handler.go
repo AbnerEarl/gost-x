@@ -8,14 +8,14 @@ import (
 	"sync"
 	"time"
 
+	xctx "github.com/AbnerEarl/gost-x/ctx"
+	xrecorder "github.com/AbnerEarl/gost-x/recorder"
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/go-gost/core/auth"
 	"github.com/go-gost/core/handler"
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
 	"github.com/go-gost/core/recorder"
-	xctx "github.com/go-gost/x/ctx"
-	xrecorder "github.com/go-gost/x/recorder"
-	"github.com/go-gost/x/registry"
 )
 
 func init() {

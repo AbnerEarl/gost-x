@@ -15,8 +15,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/AbnerEarl/gost-x/config"
 	"github.com/go-gost/core/logger"
-	"github.com/go-gost/x/config"
 	"github.com/patrickmn/go-cache"
 )
 

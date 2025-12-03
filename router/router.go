@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/AbnerEarl/gost-x/internal/loader"
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/core/router"
-	"github.com/go-gost/x/internal/loader"
 )
 
 type options struct {

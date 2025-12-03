@@ -7,12 +7,12 @@ import (
 	"sync"
 	"time"
 
+	xctx "github.com/AbnerEarl/gost-x/ctx"
+	"github.com/AbnerEarl/gost-x/internal/net/proxyproto"
+	ssh_util "github.com/AbnerEarl/gost-x/internal/util/ssh"
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/go-gost/core/dialer"
 	md "github.com/go-gost/core/metadata"
-	xctx "github.com/go-gost/x/ctx"
-	"github.com/go-gost/x/internal/net/proxyproto"
-	ssh_util "github.com/go-gost/x/internal/util/ssh"
-	"github.com/go-gost/x/registry"
 	"golang.org/x/crypto/ssh"
 	"golang.org/x/crypto/ssh/agent"
 )

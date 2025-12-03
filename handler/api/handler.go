@@ -5,11 +5,11 @@ import (
 	"net"
 	"net/http"
 
+	"github.com/AbnerEarl/gost-x/api"
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/gin-gonic/gin"
 	"github.com/go-gost/core/handler"
 	md "github.com/go-gost/core/metadata"
-	"github.com/go-gost/x/api"
-	"github.com/go-gost/x/registry"
 )
 
 func init() {

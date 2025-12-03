@@ -6,14 +6,14 @@ import (
 	"net"
 	"time"
 
+	ctxvalue "github.com/AbnerEarl/gost-x/ctx"
+	xnet "github.com/AbnerEarl/gost-x/internal/net"
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/go-gost/core/handler"
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
 	"github.com/go-gost/gosocks4"
 	"github.com/go-gost/gosocks5"
-	ctxvalue "github.com/go-gost/x/ctx"
-	xnet "github.com/go-gost/x/internal/net"
-	"github.com/go-gost/x/registry"
 )
 
 func init() {

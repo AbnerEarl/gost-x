@@ -5,10 +5,10 @@ import (
 	"encoding/json"
 	"net/http"
 
+	"github.com/AbnerEarl/gost-x/internal/plugin"
+	xrouter "github.com/AbnerEarl/gost-x/router"
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/core/router"
-	"github.com/go-gost/x/internal/plugin"
-	xrouter "github.com/go-gost/x/router"
 )
 
 type httpPluginGetRouteRequest struct {

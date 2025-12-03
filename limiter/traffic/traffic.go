@@ -9,12 +9,12 @@ import (
 	"sync"
 	"time"
 
+	"github.com/AbnerEarl/gost-x/internal/loader"
+	xlogger "github.com/AbnerEarl/gost-x/logger"
 	"github.com/alecthomas/units"
 	"github.com/go-gost/core/limiter"
 	"github.com/go-gost/core/limiter/traffic"
 	"github.com/go-gost/core/logger"
-	"github.com/go-gost/x/internal/loader"
-	xlogger "github.com/go-gost/x/logger"
 	"github.com/patrickmn/go-cache"
 	"github.com/yl2chen/cidranger"
 )

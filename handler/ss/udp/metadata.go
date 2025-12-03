@@ -3,9 +3,9 @@ package ss
 import (
 	"time"
 
+	mdutil "github.com/AbnerEarl/gost-x/metadata/util"
 	mdata "github.com/go-gost/core/metadata"
 	"github.com/go-gost/go-shadowsocks2/core"
-	mdutil "github.com/go-gost/x/metadata/util"
 )
 
 const (

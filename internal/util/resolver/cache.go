@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
+	ctxvalue "github.com/AbnerEarl/gost-x/ctx"
 	"github.com/go-gost/core/logger"
-	ctxvalue "github.com/go-gost/x/ctx"
 	"github.com/miekg/dns"
 )
 

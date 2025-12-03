@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
+	mdutil "github.com/AbnerEarl/gost-x/metadata/util"
 	mdata "github.com/go-gost/core/metadata"
-	mdutil "github.com/go-gost/x/metadata/util"
 )
 
 const (

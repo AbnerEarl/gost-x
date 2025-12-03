@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/AbnerEarl/gost-x/config"
+	parser "github.com/AbnerEarl/gost-x/config/parsing/hosts"
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/gin-gonic/gin"
-	"github.com/go-gost/x/config"
-	parser "github.com/go-gost/x/config/parsing/hosts"
-	"github.com/go-gost/x/registry"
 )
 
 // swagger:parameters getHostsListRequest

@@ -4,9 +4,9 @@ import (
 	"context"
 	"net"
 
+	xctx "github.com/AbnerEarl/gost-x/ctx"
 	"github.com/go-gost/core/admission"
 	"github.com/go-gost/core/logger"
-	xctx "github.com/go-gost/x/ctx"
 )
 
 type listener struct {

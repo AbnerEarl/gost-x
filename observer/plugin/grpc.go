@@ -5,12 +5,12 @@ import (
 	"errors"
 	"io"
 
+	"github.com/AbnerEarl/gost-x/internal/plugin"
+	xstats "github.com/AbnerEarl/gost-x/observer/stats"
+	"github.com/AbnerEarl/gost-x/service"
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/core/observer"
 	"github.com/go-gost/plugin/observer/proto"
-	"github.com/go-gost/x/internal/plugin"
-	xstats "github.com/go-gost/x/observer/stats"
-	"github.com/go-gost/x/service"
 	"google.golang.org/grpc"
 )
 

@@ -3,11 +3,11 @@ package api
 import (
 	"net/http"
 
+	"github.com/AbnerEarl/gost-x/config"
+	"github.com/AbnerEarl/gost-x/config/loader"
+	"github.com/AbnerEarl/gost-x/config/parsing/parser"
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/gin-gonic/gin"
-	"github.com/go-gost/x/config"
-	"github.com/go-gost/x/config/loader"
-	"github.com/go-gost/x/config/parsing/parser"
-	"github.com/go-gost/x/registry"
 )
 
 // swagger:parameters reloadConfigRequest

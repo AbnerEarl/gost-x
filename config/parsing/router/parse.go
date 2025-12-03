@@ -5,13 +5,13 @@ import (
 	"net"
 	"strings"
 
+	"github.com/AbnerEarl/gost-x/config"
+	"github.com/AbnerEarl/gost-x/internal/loader"
+	"github.com/AbnerEarl/gost-x/internal/plugin"
+	xrouter "github.com/AbnerEarl/gost-x/router"
+	router_plugin "github.com/AbnerEarl/gost-x/router/plugin"
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/core/router"
-	"github.com/go-gost/x/config"
-	"github.com/go-gost/x/internal/loader"
-	"github.com/go-gost/x/internal/plugin"
-	xrouter "github.com/go-gost/x/router"
-	router_plugin "github.com/go-gost/x/router/plugin"
 )
 
 func ParseRouter(cfg *config.RouterConfig) router.Router {

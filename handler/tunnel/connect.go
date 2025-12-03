@@ -6,11 +6,11 @@ import (
 	"net"
 	"time"
 
+	xnet "github.com/AbnerEarl/gost-x/internal/net"
 	"github.com/go-gost/core/bypass"
 	"github.com/go-gost/core/ingress"
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/relay"
-	xnet "github.com/go-gost/x/internal/net"
 )
 
 func (h *tunnelHandler) handleConnect(ctx context.Context, req *relay.Request, conn net.Conn, network, srcAddr string, dstAddr string, tunnelID relay.TunnelID, log logger.Logger) error {

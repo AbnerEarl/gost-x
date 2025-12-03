@@ -5,11 +5,11 @@ import (
 	"crypto/tls"
 	"net"
 
+	xctx "github.com/AbnerEarl/gost-x/ctx"
+	"github.com/AbnerEarl/gost-x/internal/util/socks"
 	"github.com/go-gost/core/auth"
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/gosocks5"
-	xctx "github.com/go-gost/x/ctx"
-	"github.com/go-gost/x/internal/util/socks"
 )
 
 type serverSelector struct {

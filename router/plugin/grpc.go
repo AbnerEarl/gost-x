@@ -4,11 +4,11 @@ import (
 	"context"
 	"io"
 
+	"github.com/AbnerEarl/gost-x/internal/plugin"
+	xrouter "github.com/AbnerEarl/gost-x/router"
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/core/router"
 	"github.com/go-gost/plugin/router/proto"
-	"github.com/go-gost/x/internal/plugin"
-	xrouter "github.com/go-gost/x/router"
 	"google.golang.org/grpc"
 )
 

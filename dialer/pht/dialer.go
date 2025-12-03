@@ -7,10 +7,10 @@ import (
 	"sync"
 	"time"
 
+	pht_util "github.com/AbnerEarl/gost-x/internal/util/pht"
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/go-gost/core/dialer"
 	md "github.com/go-gost/core/metadata"
-	pht_util "github.com/go-gost/x/internal/util/pht"
-	"github.com/go-gost/x/registry"
 )
 
 func init() {

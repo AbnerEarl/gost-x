@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/AbnerEarl/gost-x/config"
+	parser "github.com/AbnerEarl/gost-x/config/parsing/bypass"
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/gin-gonic/gin"
-	"github.com/go-gost/x/config"
-	parser "github.com/go-gost/x/config/parsing/bypass"
-	"github.com/go-gost/x/registry"
 )
 
 // swagger:parameters getBypassListRequest
@@ -23,7 +23,7 @@ type getBypassListResponse struct {
 }
 
 type bypassList struct {
-	Count int                       `json:"count"`
+	Count int                    `json:"count"`
 	List  []*config.BypassConfig `json:"list"`
 }
 

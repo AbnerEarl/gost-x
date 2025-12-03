@@ -9,11 +9,11 @@ import (
 	"sync"
 	"time"
 
+	"github.com/AbnerEarl/gost-x/internal/loader"
+	"github.com/AbnerEarl/gost-x/internal/matcher"
+	xlogger "github.com/AbnerEarl/gost-x/logger"
 	"github.com/go-gost/core/admission"
 	"github.com/go-gost/core/logger"
-	"github.com/go-gost/x/internal/loader"
-	"github.com/go-gost/x/internal/matcher"
-	xlogger "github.com/go-gost/x/logger"
 )
 
 type options struct {

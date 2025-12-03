@@ -8,11 +8,11 @@ import (
 	"net/netip"
 	"time"
 
+	xip "github.com/AbnerEarl/gost-x/internal/net/ip"
+	tun_util "github.com/AbnerEarl/gost-x/internal/util/tun"
 	"github.com/go-gost/core/auth"
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/core/router"
-	xip "github.com/go-gost/x/internal/net/ip"
-	tun_util "github.com/go-gost/x/internal/util/tun"
 	"github.com/songgao/water/waterutil"
 	"golang.org/x/net/ipv4"
 	"golang.org/x/net/ipv6"

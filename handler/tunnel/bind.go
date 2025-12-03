@@ -6,12 +6,12 @@ import (
 	"encoding/hex"
 	"net"
 
+	"github.com/AbnerEarl/gost-x/internal/util/mux"
 	"github.com/go-gost/core/ingress"
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/core/observer/stats"
 	"github.com/go-gost/core/sd"
 	"github.com/go-gost/relay"
-	"github.com/go-gost/x/internal/util/mux"
 	"github.com/google/uuid"
 )
 

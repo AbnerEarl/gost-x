@@ -6,11 +6,11 @@ import (
 	"net"
 	"sync"
 
+	quic_util "github.com/AbnerEarl/gost-x/internal/util/quic"
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/go-gost/core/dialer"
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
-	quic_util "github.com/go-gost/x/internal/util/quic"
-	"github.com/go-gost/x/registry"
 	"github.com/quic-go/quic-go"
 )
 

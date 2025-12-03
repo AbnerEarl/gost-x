@@ -13,15 +13,15 @@ import (
 	"strings"
 	"time"
 
+	xbypass "github.com/AbnerEarl/gost-x/bypass"
+	xio "github.com/AbnerEarl/gost-x/internal/io"
+	xnet "github.com/AbnerEarl/gost-x/internal/net"
+	xhttp "github.com/AbnerEarl/gost-x/internal/net/http"
+	tls_util "github.com/AbnerEarl/gost-x/internal/util/tls"
+	xrecorder "github.com/AbnerEarl/gost-x/recorder"
 	"github.com/go-gost/core/bypass"
 	"github.com/go-gost/core/logger"
 	dissector "github.com/go-gost/tls-dissector"
-	xbypass "github.com/go-gost/x/bypass"
-	xio "github.com/go-gost/x/internal/io"
-	xnet "github.com/go-gost/x/internal/net"
-	xhttp "github.com/go-gost/x/internal/net/http"
-	tls_util "github.com/go-gost/x/internal/util/tls"
-	xrecorder "github.com/go-gost/x/recorder"
 )
 
 const (

@@ -7,12 +7,12 @@ import (
 	"net"
 	"syscall"
 
+	"github.com/AbnerEarl/gost-x/ctx"
+	xio "github.com/AbnerEarl/gost-x/internal/io"
+	xnet "github.com/AbnerEarl/gost-x/internal/net"
+	"github.com/AbnerEarl/gost-x/internal/net/udp"
+	xmetrics "github.com/AbnerEarl/gost-x/metrics"
 	"github.com/go-gost/core/metrics"
-	"github.com/go-gost/x/ctx"
-	xio "github.com/go-gost/x/internal/io"
-	xnet "github.com/go-gost/x/internal/net"
-	"github.com/go-gost/x/internal/net/udp"
-	xmetrics "github.com/go-gost/x/metrics"
 )
 
 var (

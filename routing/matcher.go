@@ -9,9 +9,9 @@ import (
 	"strings"
 	"unicode/utf8"
 
+	"github.com/AbnerEarl/gost-x/registry"
+	"github.com/AbnerEarl/gost-x/routing/rules"
 	"github.com/go-gost/core/routing"
-	"github.com/go-gost/x/registry"
-	"github.com/go-gost/x/routing/rules"
 	"golang.org/x/exp/slices"
 )
 

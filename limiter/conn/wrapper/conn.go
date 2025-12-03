@@ -6,9 +6,9 @@ import (
 	"net"
 	"syscall"
 
+	"github.com/AbnerEarl/gost-x/ctx"
+	xio "github.com/AbnerEarl/gost-x/internal/io"
 	limiter "github.com/go-gost/core/limiter/conn"
-	"github.com/go-gost/x/ctx"
-	xio "github.com/go-gost/x/internal/io"
 )
 
 var (

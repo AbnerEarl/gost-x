@@ -8,14 +8,14 @@ import (
 	"sync"
 	"time"
 
+	xctx "github.com/AbnerEarl/gost-x/ctx"
+	ictx "github.com/AbnerEarl/gost-x/internal/ctx"
+	tun_util "github.com/AbnerEarl/gost-x/internal/util/tun"
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/go-gost/core/chain"
 	"github.com/go-gost/core/handler"
 	"github.com/go-gost/core/hop"
 	md "github.com/go-gost/core/metadata"
-	xctx "github.com/go-gost/x/ctx"
-	ictx "github.com/go-gost/x/internal/ctx"
-	tun_util "github.com/go-gost/x/internal/util/tun"
-	"github.com/go-gost/x/registry"
 )
 
 var (

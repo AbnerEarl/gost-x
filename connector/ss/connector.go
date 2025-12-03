@@ -6,6 +6,9 @@ import (
 	"net"
 	"time"
 
+	ctxvalue "github.com/AbnerEarl/gost-x/ctx"
+	"github.com/AbnerEarl/gost-x/internal/util/ss"
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/go-gost/core/common/bufpool"
 	"github.com/go-gost/core/connector"
 	md "github.com/go-gost/core/metadata"
@@ -13,9 +16,6 @@ import (
 	"github.com/go-gost/go-shadowsocks2/socks"
 	"github.com/go-gost/go-shadowsocks2/utils"
 	"github.com/go-gost/gosocks5"
-	ctxvalue "github.com/go-gost/x/ctx"
-	"github.com/go-gost/x/internal/util/ss"
-	"github.com/go-gost/x/registry"
 )
 
 func init() {

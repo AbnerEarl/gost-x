@@ -8,9 +8,9 @@ import (
 	"strings"
 	"time"
 
+	xmetrics "github.com/AbnerEarl/gost-x/metrics"
 	"github.com/go-gost/core/metrics"
 	"github.com/go-gost/core/recorder"
-	xmetrics "github.com/go-gost/x/metrics"
 )
 
 type httpRecorderOptions struct {

@@ -5,11 +5,11 @@ import (
 	"io"
 	"net"
 
+	ctxvalue "github.com/AbnerEarl/gost-x/ctx"
+	"github.com/AbnerEarl/gost-x/internal/plugin"
 	"github.com/go-gost/core/hosts"
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/plugin/hosts/proto"
-	ctxvalue "github.com/go-gost/x/ctx"
-	"github.com/go-gost/x/internal/plugin"
 	"google.golang.org/grpc"
 )
 

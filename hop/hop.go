@@ -10,16 +10,16 @@ import (
 	"sync"
 	"time"
 
+	"github.com/AbnerEarl/gost-x/config"
+	node_parser "github.com/AbnerEarl/gost-x/config/parsing/node"
+	"github.com/AbnerEarl/gost-x/internal/loader"
+	xlogger "github.com/AbnerEarl/gost-x/logger"
 	"github.com/go-gost/core/bypass"
 	"github.com/go-gost/core/chain"
 	"github.com/go-gost/core/hop"
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/core/routing"
 	"github.com/go-gost/core/selector"
-	"github.com/go-gost/x/config"
-	node_parser "github.com/go-gost/x/config/parsing/node"
-	"github.com/go-gost/x/internal/loader"
-	xlogger "github.com/go-gost/x/logger"
 )
 
 type options struct {

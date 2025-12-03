@@ -4,10 +4,10 @@ import (
 	"context"
 	"net"
 
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/go-gost/core/dialer"
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
-	"github.com/go-gost/x/registry"
 )
 
 func init() {

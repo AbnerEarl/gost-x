@@ -5,11 +5,11 @@ import (
 	"net"
 	"strconv"
 
+	"github.com/AbnerEarl/gost-x/internal/util/mux"
+	mdx "github.com/AbnerEarl/gost-x/metadata"
 	"github.com/go-gost/core/logger"
 	mdata "github.com/go-gost/core/metadata"
 	"github.com/go-gost/relay"
-	"github.com/go-gost/x/internal/util/mux"
-	mdx "github.com/go-gost/x/metadata"
 )
 
 type bindListener struct {

@@ -8,11 +8,11 @@ import (
 	"sync/atomic"
 	"time"
 
+	xctx "github.com/AbnerEarl/gost-x/ctx"
+	mdutil "github.com/AbnerEarl/gost-x/metadata/util"
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/core/metadata"
 	"github.com/go-gost/core/selector"
-	xctx "github.com/go-gost/x/ctx"
-	mdutil "github.com/go-gost/x/metadata/util"
 )
 
 type roundRobinStrategy[T any] struct {

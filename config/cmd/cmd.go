@@ -10,13 +10,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/go-gost/x/config"
-	xnet "github.com/go-gost/x/internal/net"
-	"github.com/go-gost/x/limiter/conn"
-	"github.com/go-gost/x/limiter/traffic"
-	mdx "github.com/go-gost/x/metadata"
-	mdutil "github.com/go-gost/x/metadata/util"
-	"github.com/go-gost/x/registry"
+	"github.com/AbnerEarl/gost-x/config"
+	xnet "github.com/AbnerEarl/gost-x/internal/net"
+	"github.com/AbnerEarl/gost-x/limiter/conn"
+	"github.com/AbnerEarl/gost-x/limiter/traffic"
+	mdx "github.com/AbnerEarl/gost-x/metadata"
+	mdutil "github.com/AbnerEarl/gost-x/metadata/util"
+	"github.com/AbnerEarl/gost-x/registry"
 )
 
 var (

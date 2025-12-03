@@ -8,14 +8,14 @@ import (
 	"sync"
 	"time"
 
+	xctx "github.com/AbnerEarl/gost-x/ctx"
+	"github.com/AbnerEarl/gost-x/internal/net/proxyproto"
+	"github.com/AbnerEarl/gost-x/internal/util/mux"
+	ws_util "github.com/AbnerEarl/gost-x/internal/util/ws"
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/go-gost/core/dialer"
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
-	xctx "github.com/go-gost/x/ctx"
-	"github.com/go-gost/x/internal/net/proxyproto"
-	"github.com/go-gost/x/internal/util/mux"
-	ws_util "github.com/go-gost/x/internal/util/ws"
-	"github.com/go-gost/x/registry"
 	"github.com/gorilla/websocket"
 )
 

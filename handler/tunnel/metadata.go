@@ -5,15 +5,15 @@ import (
 	"strings"
 	"time"
 
+	xingress "github.com/AbnerEarl/gost-x/ingress"
+	"github.com/AbnerEarl/gost-x/internal/util/mux"
+	mdutil "github.com/AbnerEarl/gost-x/metadata/util"
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/go-gost/core/ingress"
 	"github.com/go-gost/core/logger"
 	mdata "github.com/go-gost/core/metadata"
 	"github.com/go-gost/core/sd"
 	"github.com/go-gost/relay"
-	xingress "github.com/go-gost/x/ingress"
-	"github.com/go-gost/x/internal/util/mux"
-	mdutil "github.com/go-gost/x/metadata/util"
-	"github.com/go-gost/x/registry"
 )
 
 const (

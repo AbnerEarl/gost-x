@@ -3,12 +3,12 @@ package router
 import (
 	"time"
 
+	mdutil "github.com/AbnerEarl/gost-x/metadata/util"
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/go-gost/core/ingress"
 	mdata "github.com/go-gost/core/metadata"
 	"github.com/go-gost/core/router"
 	"github.com/go-gost/core/sd"
-	mdutil "github.com/go-gost/x/metadata/util"
-	"github.com/go-gost/x/registry"
 )
 
 const (

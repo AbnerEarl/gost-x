@@ -7,12 +7,12 @@ import (
 	"net"
 	"time"
 
+	xctx "github.com/AbnerEarl/gost-x/ctx"
+	ictx "github.com/AbnerEarl/gost-x/internal/ctx"
+	xnet "github.com/AbnerEarl/gost-x/internal/net"
 	"github.com/go-gost/core/chain"
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/core/recorder"
-	xctx "github.com/go-gost/x/ctx"
-	ictx "github.com/go-gost/x/internal/ctx"
-	xnet "github.com/go-gost/x/internal/net"
 )
 
 type Router struct {

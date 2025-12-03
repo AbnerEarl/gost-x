@@ -4,14 +4,14 @@ import (
 	"crypto/tls"
 	"strings"
 
+	xbypass "github.com/AbnerEarl/gost-x/bypass"
+	bypass_plugin "github.com/AbnerEarl/gost-x/bypass/plugin"
+	"github.com/AbnerEarl/gost-x/config"
+	"github.com/AbnerEarl/gost-x/internal/loader"
+	"github.com/AbnerEarl/gost-x/internal/plugin"
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/go-gost/core/bypass"
 	"github.com/go-gost/core/logger"
-	xbypass "github.com/go-gost/x/bypass"
-	bypass_plugin "github.com/go-gost/x/bypass/plugin"
-	"github.com/go-gost/x/config"
-	"github.com/go-gost/x/internal/loader"
-	"github.com/go-gost/x/internal/plugin"
-	"github.com/go-gost/x/registry"
 )
 
 func ParseBypass(cfg *config.BypassConfig) bypass.Bypass {

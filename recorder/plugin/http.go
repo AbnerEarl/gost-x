@@ -7,9 +7,9 @@ import (
 	"errors"
 	"net/http"
 
+	"github.com/AbnerEarl/gost-x/internal/plugin"
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/core/recorder"
-	"github.com/go-gost/x/internal/plugin"
 )
 
 type httpPluginRequest struct {

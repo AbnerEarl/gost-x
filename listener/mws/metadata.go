@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/AbnerEarl/gost-x/internal/util/mux"
+	mdutil "github.com/AbnerEarl/gost-x/metadata/util"
 	mdata "github.com/go-gost/core/metadata"
-	"github.com/go-gost/x/internal/util/mux"
-	mdutil "github.com/go-gost/x/metadata/util"
 )
 
 const (

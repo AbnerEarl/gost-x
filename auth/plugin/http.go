@@ -6,10 +6,10 @@ import (
 	"encoding/json"
 	"net/http"
 
+	xctx "github.com/AbnerEarl/gost-x/ctx"
+	"github.com/AbnerEarl/gost-x/internal/plugin"
 	"github.com/go-gost/core/auth"
 	"github.com/go-gost/core/logger"
-	xctx "github.com/go-gost/x/ctx"
-	"github.com/go-gost/x/internal/plugin"
 )
 
 type httpPluginRequest struct {

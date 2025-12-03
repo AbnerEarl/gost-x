@@ -11,13 +11,13 @@ import (
 	"sync"
 	"time"
 
+	ctxvalue "github.com/AbnerEarl/gost-x/ctx"
+	"github.com/AbnerEarl/gost-x/internal/loader"
+	"github.com/AbnerEarl/gost-x/internal/matcher"
+	xnet "github.com/AbnerEarl/gost-x/internal/net"
+	xlogger "github.com/AbnerEarl/gost-x/logger"
 	"github.com/go-gost/core/bypass"
 	"github.com/go-gost/core/logger"
-	ctxvalue "github.com/go-gost/x/ctx"
-	"github.com/go-gost/x/internal/loader"
-	"github.com/go-gost/x/internal/matcher"
-	xnet "github.com/go-gost/x/internal/net"
-	xlogger "github.com/go-gost/x/logger"
 	"github.com/gobwas/glob"
 )
 

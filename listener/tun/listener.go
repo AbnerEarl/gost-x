@@ -5,19 +5,19 @@ import (
 	"net"
 	"time"
 
+	ictx "github.com/AbnerEarl/gost-x/internal/ctx"
+	xnet "github.com/AbnerEarl/gost-x/internal/net"
+	traffic_limiter "github.com/AbnerEarl/gost-x/limiter/traffic"
+	limiter_wrapper "github.com/AbnerEarl/gost-x/limiter/traffic/wrapper"
+	mdx "github.com/AbnerEarl/gost-x/metadata"
+	metrics "github.com/AbnerEarl/gost-x/metrics/wrapper"
+	stats "github.com/AbnerEarl/gost-x/observer/stats/wrapper"
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/go-gost/core/limiter"
 	"github.com/go-gost/core/listener"
 	"github.com/go-gost/core/logger"
 	mdata "github.com/go-gost/core/metadata"
 	"github.com/go-gost/core/router"
-	ictx "github.com/go-gost/x/internal/ctx"
-	xnet "github.com/go-gost/x/internal/net"
-	traffic_limiter "github.com/go-gost/x/limiter/traffic"
-	limiter_wrapper "github.com/go-gost/x/limiter/traffic/wrapper"
-	mdx "github.com/go-gost/x/metadata"
-	metrics "github.com/go-gost/x/metrics/wrapper"
-	stats "github.com/go-gost/x/observer/stats/wrapper"
-	"github.com/go-gost/x/registry"
 )
 
 func init() {

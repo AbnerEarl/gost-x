@@ -12,9 +12,9 @@ import (
 	"strings"
 	"time"
 
+	xchain "github.com/AbnerEarl/gost-x/chain"
 	"github.com/go-gost/core/chain"
 	"github.com/go-gost/core/logger"
-	xchain "github.com/go-gost/x/chain"
 	"github.com/miekg/dns"
 )
 

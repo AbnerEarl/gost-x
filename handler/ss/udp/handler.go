@@ -9,6 +9,12 @@ import (
 	"sync"
 	"time"
 
+	xctx "github.com/AbnerEarl/gost-x/ctx"
+	ictx "github.com/AbnerEarl/gost-x/internal/ctx"
+	"github.com/AbnerEarl/gost-x/internal/util/relay"
+	rate_limiter "github.com/AbnerEarl/gost-x/limiter/rate"
+	xrecorder "github.com/AbnerEarl/gost-x/recorder"
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/go-gost/core/bypass"
 	"github.com/go-gost/core/common/bufpool"
 	"github.com/go-gost/core/handler"
@@ -17,12 +23,6 @@ import (
 	"github.com/go-gost/core/recorder"
 	"github.com/go-gost/go-shadowsocks2/core"
 	"github.com/go-gost/go-shadowsocks2/utils"
-	xctx "github.com/go-gost/x/ctx"
-	ictx "github.com/go-gost/x/internal/ctx"
-	"github.com/go-gost/x/internal/util/relay"
-	rate_limiter "github.com/go-gost/x/limiter/rate"
-	xrecorder "github.com/go-gost/x/recorder"
-	"github.com/go-gost/x/registry"
 )
 
 func init() {

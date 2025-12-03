@@ -5,8 +5,8 @@ import (
 	"os"
 	"time"
 
+	mdutil "github.com/AbnerEarl/gost-x/metadata/util"
 	mdata "github.com/go-gost/core/metadata"
-	mdutil "github.com/go-gost/x/metadata/util"
 	"github.com/mitchellh/go-homedir"
 	"github.com/zalando/go-keyring"
 	"golang.org/x/crypto/ssh"

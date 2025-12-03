@@ -5,7 +5,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/go-gost/x/ctx"
+	"github.com/AbnerEarl/gost-x/ctx"
 	proxyproto "github.com/pires/go-proxyproto"
 )
 

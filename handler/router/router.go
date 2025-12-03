@@ -9,7 +9,7 @@ import (
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/relay"
 
-	"github.com/go-gost/x/selector"
+	"github.com/AbnerEarl/gost-x/selector"
 	"github.com/google/uuid"
 )
 

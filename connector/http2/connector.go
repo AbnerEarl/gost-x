@@ -12,12 +12,12 @@ import (
 	"net/url"
 	"time"
 
+	xctx "github.com/AbnerEarl/gost-x/ctx"
+	ictx "github.com/AbnerEarl/gost-x/internal/ctx"
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/go-gost/core/connector"
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
-	xctx "github.com/go-gost/x/ctx"
-	ictx "github.com/go-gost/x/internal/ctx"
-	"github.com/go-gost/x/registry"
 )
 
 func init() {

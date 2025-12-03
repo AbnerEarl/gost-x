@@ -6,11 +6,11 @@ import (
 	"crypto/x509"
 	"time"
 
+	"github.com/AbnerEarl/gost-x/internal/util/mux"
+	mdutil "github.com/AbnerEarl/gost-x/metadata/util"
+	"github.com/AbnerEarl/gost-x/registry"
 	"github.com/go-gost/core/bypass"
 	mdata "github.com/go-gost/core/metadata"
-	"github.com/go-gost/x/internal/util/mux"
-	mdutil "github.com/go-gost/x/metadata/util"
-	"github.com/go-gost/x/registry"
 )
 
 type metadata struct {

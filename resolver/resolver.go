@@ -6,12 +6,12 @@ import (
 	"strings"
 	"time"
 
+	xchain "github.com/AbnerEarl/gost-x/chain"
+	resolver_util "github.com/AbnerEarl/gost-x/internal/util/resolver"
+	"github.com/AbnerEarl/gost-x/resolver/exchanger"
 	"github.com/go-gost/core/chain"
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/core/resolver"
-	xchain "github.com/go-gost/x/chain"
-	resolver_util "github.com/go-gost/x/internal/util/resolver"
-	"github.com/go-gost/x/resolver/exchanger"
 	"github.com/miekg/dns"
 )
 

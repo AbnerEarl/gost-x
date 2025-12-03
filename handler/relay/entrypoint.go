@@ -5,15 +5,15 @@ import (
 	"net"
 	"time"
 
+	admission "github.com/AbnerEarl/gost-x/admission/wrapper"
+	xnet "github.com/AbnerEarl/gost-x/internal/net"
+	"github.com/AbnerEarl/gost-x/internal/net/proxyproto"
+	"github.com/AbnerEarl/gost-x/internal/util/mux"
+	metrics "github.com/AbnerEarl/gost-x/metrics/wrapper"
 	"github.com/go-gost/core/handler"
 	"github.com/go-gost/core/listener"
 	md "github.com/go-gost/core/metadata"
 	"github.com/go-gost/relay"
-	admission "github.com/go-gost/x/admission/wrapper"
-	xnet "github.com/go-gost/x/internal/net"
-	"github.com/go-gost/x/internal/net/proxyproto"
-	"github.com/go-gost/x/internal/util/mux"
-	metrics "github.com/go-gost/x/metrics/wrapper"
 )
 
 type tcpListener struct {
